@@ -2,7 +2,6 @@
 agp = "8.8.0"
 converterGson = "2.9.0"
 coreTesting = "2.2.0"
-espressoCoreVersion = "3.5.0"
 hiltAndroid = "2.51.1"
 hiltAndroidTesting = "2.50"
 hiltNavigationCompose = "1.2.0"
@@ -19,15 +18,11 @@ loggingInterceptor = "4.9.0"
 mockitoCore = "5.2.0"
 mockitoInline = "5.2.0"
 mockitoKotlin = "4.0.0"
-mockitoKotlinVersion = "5.2.0"
 mockk = "1.13.10"
 mockkAndroid = "1.13.5"
-mockkVersion = "1.13.10"
 okhttp = "4.11.0"
 retrofit = "2.9.0"
-uiTestAndroid = "1.7.6"
 uiTestJunit4 = "1.7.6"
-uiTestJunit4Android = "1.7.6"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
