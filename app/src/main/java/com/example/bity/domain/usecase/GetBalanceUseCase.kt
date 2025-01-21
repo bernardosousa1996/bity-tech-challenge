@@ -1,6 +1,5 @@
 package com.example.bity.domain.usecase
 
-import android.util.Log
 import com.example.bity.data.model.BalanceDataModel
 import com.example.bity.data.repository.EtherscanRepository
 import javax.inject.Inject

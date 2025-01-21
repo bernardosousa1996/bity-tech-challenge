@@ -16,7 +16,4 @@ open class EtherscanRepository @Inject constructor(
 
     suspend fun getGasPrice(apiKey: String) =
         etherscanApi.getGasPrice(apiKey = apiKey)
-
-    suspend fun getTransactionDetails(transactionHash: String, apiKey: String) =
-        etherscanApi.getTransactionDetails(transactionHash = transactionHash, apiKey = apiKey)
 }

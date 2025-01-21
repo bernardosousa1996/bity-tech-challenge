@@ -10,7 +10,6 @@ import com.example.bity.domain.usecase.GetBalanceUseCase
 import com.example.bity.domain.usecase.GetGasPricesUseCase
 import com.example.bity.domain.usecase.GetTransactionsUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -102,7 +101,7 @@ open class EtherscanViewModel @Inject constructor(
     }
 
     private fun fetchGasPrice() {
-        viewModelScope.launch(Dispatchers.IO) {
+        viewModelScope.launch {
             try {
                 val gasPrice = getGasPricesUseCase(apiKey)
                 _gasPriceModel.value = gasPrice?.result

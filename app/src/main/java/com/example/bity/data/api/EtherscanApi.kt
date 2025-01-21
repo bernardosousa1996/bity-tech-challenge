@@ -2,7 +2,6 @@ package com.example.bity.data.api
 
 import com.example.bity.data.model.BalanceDataModel
 import com.example.bity.data.model.GasPriceDataModel
-import com.example.bity.data.model.TransactionDataModel
 import com.example.bity.data.model.TransactionListDataModel
 import retrofit2.Response
 import retrofit2.http.GET
@@ -41,13 +40,4 @@ interface EtherscanApi {
         @Query("action") action: String = "gasoracle",
         @Query("apikey") apiKey: String
     ): Response<GasPriceDataModel>
-
-
-    @GET("api")
-    suspend fun getTransactionDetails(
-        @Query("module") module: String = "proxy",
-        @Query("action") action: String = "eth_getTransactionByHash",
-        @Query("txhash") transactionHash: String,
-        @Query("apikey") apiKey: String
-    ): Response<TransactionDataModel>
 }
