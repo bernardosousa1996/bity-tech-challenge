@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Bity</string>
+    <string name="back">Back</string>
+    <string name="date">Date:</string>
+    <string name="to">To:</string>
+    <string name="tx_hash">Tx Hash:</string>
+    <string name="formated_eth">%1$s ETH</string>
+    <string name="transaction_details_missing">Transaction details are missing</string>
+    <string name="error">Error: %1$s</string>
+    <string name="enter_ethereum_address">Enter Ethereum Address</string>
+    <string name="search">Search</string>
+    <string name="gas_price_low_gwei">Gas Price (Low): %1$s GWEI</string>
+    <string name="gas_price_average_gwei">Gas Price (Average): %1$s GWEI</string>
+    <string name="gas_price_high_gwei">Gas Price (High): %1$s GWEI</string>
+    <string name="amount">Amount:</string>
 </resources>
